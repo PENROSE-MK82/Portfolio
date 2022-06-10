@@ -306,7 +306,7 @@ Material:
     - _OutShadowColor: {r: 0.51770633, g: 0.33891064, b: 0.6037736, a: 0}
     - _Outline_Color: {r: 0.1397059, g: 0.13867864, b: 0.13867864, a: 1}
     - _RimLightColor: {r: 0.18401209, g: 0.16608995, b: 0.4705882, a: 1}
-    - _Shadow_Color: {r: 0.5515301, g: 0.51139194, b: 0.6415094, a: 0}
+    - _Shadow_Color: {r: 0.39799526, g: 0.28702384, b: 0.4716981, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _ViewShift: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
