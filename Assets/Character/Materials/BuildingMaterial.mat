@@ -34,6 +34,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _CalculateRamp_674fba02f551403faa855334d4ac01dc_RampTexture_2874654982:
+        m_Texture: {fileID: 2800000, guid: f965df869b87aaf42b60d218e272f161, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
