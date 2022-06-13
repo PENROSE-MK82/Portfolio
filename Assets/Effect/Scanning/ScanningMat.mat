@@ -45,11 +45,12 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScanDistance: 10.5
+    - _ScanDistance: 42.89
     - _ScanWidth: 0.5
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScanColor: {r: 0, g: 0.76644623, b: 5.3403134, a: 0}
+    - _Vector4: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2912948277347093368
 MonoBehaviour:

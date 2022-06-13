@@ -7,6 +7,8 @@ using UnityEngine;
 public class FaceDirection : MonoBehaviour
 {
     [SerializeField] private GameObject faceObj;
+    private MaterialPropertyBlock _mpb;
+    private SkinnedMeshRenderer _renderer;
     private Material _faceMat;
     
     private float _headForward;
@@ -14,7 +16,9 @@ public class FaceDirection : MonoBehaviour
 
     private void OnEnable()
     {
-        _faceMat = faceObj.GetComponent<SkinnedMeshRenderer>().sharedMaterials[0];
+        //_faceMat = faceObj.GetComponent<SkinnedMeshRenderer>().sharedMaterials[0];
+        _renderer = faceObj.GetComponent<SkinnedMeshRenderer>();
+        _mpb = new MaterialPropertyBlock();
         SetShaderValue();
     }
 
@@ -25,7 +29,8 @@ public class FaceDirection : MonoBehaviour
 
     private void SetShaderValue()
     {
-        _faceMat.SetVector("_HeadFoward", gameObject.transform.forward);
-        _faceMat.SetVector("_HeadRight", gameObject.transform.right);
+        _mpb.SetVector("_HeadFoward", gameObject.transform.forward);
+        _mpb.SetVector("_HeadRight", gameObject.transform.right);
+        _renderer.SetPropertyBlock(_mpb);
     }
 }
