@@ -47,7 +47,8 @@ Material:
     - _QueueOffset: 0
     - _Radius: 0.53
     - _ShieldPower: 0.14
-    - _Split: 0.9
+    - _Size: 150
+    - _Split: -1000
     - _SubGlowPower: 3.74
     - _TouchOffset: -0.55
     m_Colors:

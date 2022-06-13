@@ -8,11 +8,11 @@ public class MissileShooter : MonoBehaviour
 {
     [SerializeField] private GameObject unitObj;
     
-    private void Start()
+    public void StartMissile()
     {
         StartCoroutine(ShootMissileCorou());
     }
-
+    
     private IEnumerator ShootMissileCorou()
     {
         while (true)

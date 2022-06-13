@@ -2170,7 +2170,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "4054b3f6240a49918207051dc17ae44e",
     "m_Id": 0,
-    "m_DisplayName": "Split",
+    "m_DisplayName": "Size",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2620,10 +2620,10 @@
     "m_Guid": {
         "m_GuidSerialized": "68b030e3-9435-48c7-aa6c-6868924032fe"
     },
-    "m_Name": "Split",
+    "m_Name": "Size",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Split",
-    "m_DefaultReferenceName": "_Split",
+    "m_RefNameGeneratedByDisplayName": "Size",
+    "m_DefaultReferenceName": "_Size",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
