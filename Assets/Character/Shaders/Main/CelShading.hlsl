@@ -55,9 +55,7 @@ float3 CustomLightHandling(CustomLightingData d, Light light)
 float3 CalculateDiffuse(CustomLightingData d, Light light)
 {
     float3 NdotL = saturate(dot(d.normalWS, light.direction));
-    float3 radiance = light.color * light.distanceAttenuation * light.shadowAttenuation ;
-    
-    return NdotL /** radiance /*+ d.bakedGI * d.ambientOcclusion*/;
+    return NdotL;
 }
 
 

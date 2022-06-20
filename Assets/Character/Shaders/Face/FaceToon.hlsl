@@ -80,10 +80,10 @@ void SetPreview(CustomLightingData d)
 }
 
 float3 _DotFStep;
-float3 _DotRACosDir;
+float3 _AngleDir;
 
 void FaceToon_float(float3 HeadFoward, float3 HeadRight, float3 Position, float3 Normal,
-    out float3 DotR, out float3 DotFStep, out float3 DotRACosDir, out float3 CastShadow, out float3 MainLightColor, out float3 GIColor)
+    out float3 DotR, out float3 DotFStep, out float3 AngleDir, out float3 CastShadow, out float3 MainLightColor, out float3 GIColor)
 {
     CustomLightingData d;
     d.positionWS = Position;
@@ -95,7 +95,7 @@ void FaceToon_float(float3 HeadFoward, float3 HeadRight, float3 Position, float3
     _DotF = float3(1,1,1);
     _DotR = float3(1,1,1);
     _DotFStep = float3(1,1,1);
-    _DotRACosDir = float3(1,1,1);
+    _AngleDir = float3(1,1,1);
     _CastShadow = float3(0.5,0.5,0);
     
     #ifdef SHADERGRAPH_PREVIEW
@@ -120,9 +120,13 @@ void FaceToon_float(float3 HeadFoward, float3 HeadRight, float3 Position, float3
 
     float hRLength = length(HeadRight.xz);
     float mlLength = length(mainLight.direction.xz);
+
+    //빛을 정면에서 받으면 1, 뒤에서 받으면 0
     _DotFStep = step(0, _DotF);
-    float dotRAcos = (acos(_DotR / (hRLength * mlLength)) / PI) * 2;
-    _DotRACosDir = (_DotR > 0) ? (1 - dotRAcos) : (dotRAcos - 1);
+    
+    float _RadianAngle = (acos(_DotR / (hRLength * mlLength)) / PI) * 2;
+    _AngleDir = (_DotR > 0) ? (1 - _RadianAngle) : (_RadianAngle - 1);
+    
     _CastShadow = mainLight.distanceAttenuation * mainLight.shadowAttenuation;
     _CastShadow = mainLight.shadowAttenuation;
     
@@ -130,13 +134,12 @@ void FaceToon_float(float3 HeadFoward, float3 HeadRight, float3 Position, float3
     d.bakedGI = SAMPLE_GI(lightmapUV, vertexSH, Normal);
     giColor = d.bakedGI;
     mainLightColor = mainLight.color;
-    //_DotRACosDir = dotRAcos;
 
     #endif
 
     DotR = _DotR;
     DotFStep = _DotFStep;
-    DotRACosDir = _DotRACosDir;
+    AngleDir = _AngleDir;
     CastShadow = _CastShadow;
     MainLightColor = mainLightColor;
     GIColor = giColor;

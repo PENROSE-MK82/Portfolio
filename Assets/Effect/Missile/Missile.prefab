@@ -4932,7 +4932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34101751d7c1d784ba46d69abfdf7c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
   target: {fileID: 0}
 --- !u!198 &483508721333334965
 ParticleSystem:

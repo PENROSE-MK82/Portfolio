@@ -27,6 +27,16 @@ public class MissileShooter : MonoBehaviour
         float randX = Random.Range(-6, 6);
         float randY = Random.Range(1, 6);
         float randZ = Random.Range(-6, 6);
+        
+        while (randX > -3 && randX < 3)
+        {
+            randX = Random.Range(-6, 6);
+        }
+        while (randZ > -3 && randZ < 3)
+        {
+            randZ = Random.Range(-6, 6);
+        }
+        
         Vector3 thisPos = transform.position;
 
         Vector3 pos = new Vector3(thisPos.x + randX, thisPos.y + randY, thisPos.z + randZ);

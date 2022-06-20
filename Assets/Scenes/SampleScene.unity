@@ -646,7 +646,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -655,7 +655,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -680,8 +680,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: -0.056479063, y: 0.9271085, z: -0.15613548, w: -0.33600846}
-  m_LocalPosition: {x: 4.031914, y: 3.7968802, z: 9.113559}
+  m_LocalRotation: {x: -0.032801073, y: 0.9273735, z: -0.084010005, w: -0.3631043}
+  m_LocalPosition: {x: 4.1564465, y: 2.5077999, z: 8.323904}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -814,14 +814,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
-  m_LocalRotation: {x: 0.12795696, y: -0.87145203, z: 0.31718254, w: 0.35155892}
+  m_LocalRotation: {x: 0.052619185, y: -0.9285052, z: 0.33794817, w: 0.14457004}
   m_LocalPosition: {x: 0, y: 10.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 40, y: -136.06, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 557.7, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,7 +1545,7 @@ PrefabInstance:
     - target: {fileID: 6343939989176283009, guid: 90dd51e9650b78e4d94a5818ad112f0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 6343939989176283009, guid: 90dd51e9650b78e4d94a5818ad112f0d,
         type: 3}

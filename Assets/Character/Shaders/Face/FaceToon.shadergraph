@@ -132,11 +132,7 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [
-        {
-            "m_Id": "bcd3ddaba59f4a5b808260a8ee496787"
-        }
-    ],
+    "m_StickyNoteDatas": [],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -735,29 +731,6 @@
     "m_StageCapability": 2,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "08d7281c9b40487f845db47f50cf4c51",
-    "m_Id": 5,
-    "m_DisplayName": "DotRACosDir",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "DotRACosDir",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
     "m_Labels": []
 }
 
@@ -2254,6 +2227,29 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "6a85b38bc8df4cc29c20c2bf30385c39",
+    "m_Id": 5,
+    "m_DisplayName": "AngleDir",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "AngleDir",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "6a9ad89cf29f474ca1ee3339530da7fb",
     "m_Id": 4,
     "m_DisplayName": "DotFStep",
@@ -2286,7 +2282,7 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -174.0000762939453,
+            "x": -174.9999542236328,
             "y": -449.0,
             "width": 208.00001525878907,
             "height": 326.0
@@ -2995,7 +2991,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 1.0,
+    "m_Value": 1.5,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
@@ -3346,26 +3342,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
-    "m_ObjectId": "bcd3ddaba59f4a5b808260a8ee496787",
-    "m_Title": "texShadowDir",
-    "m_Content": "",
-    "m_TextSize": 0,
-    "m_Theme": 0,
-    "m_Position": {
-        "serializedVersion": "2",
-        "x": -166.0,
-        "y": -555.0,
-        "width": 200.0,
-        "height": 100.0
-    },
-    "m_Group": {
-        "m_Id": ""
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "bfb48b703d9746ff862c5aa85f1a6c9b",
     "m_Id": 0,
@@ -3442,9 +3418,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -702.0000610351563,
-            "y": -346.0,
-            "width": 189.00006103515626,
+            "x": -644.0,
+            "y": -349.0000305175781,
+            "width": 188.99996948242188,
             "height": 34.0
         }
     },
@@ -3809,7 +3785,7 @@
             "m_Id": "6a9ad89cf29f474ca1ee3339530da7fb"
         },
         {
-            "m_Id": "08d7281c9b40487f845db47f50cf4c51"
+            "m_Id": "6a85b38bc8df4cc29c20c2bf30385c39"
         },
         {
             "m_Id": "734d953842fb4b0aadb474bbc165a68c"

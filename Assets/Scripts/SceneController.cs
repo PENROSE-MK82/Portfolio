@@ -52,7 +52,7 @@ public class SceneController : MonoBehaviour
     
     private Tween ShowCity()
     {
-        return scanningMat.DOFloat(40, "_ScanDistance", 3);
+        return scanningMat.DOFloat(60, "_ScanDistance", 3);
     }
 
     private Tween ShowShield()
