@@ -1,4 +1,4 @@
-Shader "Custom/StudyConvert"
+Shader "Custom/Outline"
 {
     Properties 
 	{
